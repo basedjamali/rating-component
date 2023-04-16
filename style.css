@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.thank-you-page {
+  display: none;
+}
+
+/* Styling for the Rating state */
+.rating-page, .thank-you-page {
+  width: 470px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.rating-page {
+  text-align: left;
+}
+
+.star {
+  margin-bottom: 35px;
+  width: 20px;
+  padding: 15px 33px 15px 17px;
+}
+
+.star, .button {
+  background-color: hsl(212, 13%, 22%);
+  border-radius: 40px;
+  border: none;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+p, .button {
+  margin-bottom: 30px;
+  color: hsl(217, 12%, 63%);
+}
+
+p {
+  line-height: 25px;
+  font-size: 17px;
+}
+
+.submit-button, .number-buttons {
+  text-align: center;
+}
+
+.number-buttons {
+  width: 100%;
+}
+
+.number-buttons .nr1 {
+  padding: 15px 22px;
+}
+
+.button {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  margin-right: 17px;
+  font-size: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.button:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.button:hover {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  transition: .3s ease-in-out;
+}
+
+#submit {
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  padding: 15px 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  transition: .3s ease-in-out;
+}
+
+/* Styling for the Thank you state */
+.thank-you-page {
+  text-align: center;
+}
+
+.illustration {
+  margin: 10px 5px 30px 5px;
+}
+
+.selected {
+  font-size: 15px;
+  width: 200px;
+  margin-left: 25%;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(212, 13%, 22%);
+  border-radius: 40px;
+  padding: 5px 20px;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 550px) {
+  .rating-page, .thank-you-page {
+    width: 350px;
+  }
+
+  .selected {
+    margin-left: 15%;
+  }
+  
+  .number-buttons .nr1 {
+    padding: 11px 18px;
+  }
+
+  .button {
+    margin-right: 5px;
+    font-size: 15px;
+    padding: 11px 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .rating-page, .thank-you-page {
+    width: 290px;
+  }
+
+  .selected {
+    margin-left: 7%;
+  }
+
+  .number-buttons .nr1 {
+    padding: 9px 16px;
+  }
+
+  .button {
+    padding: 9px 14px;
+  }
+}
